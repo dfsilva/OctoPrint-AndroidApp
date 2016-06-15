@@ -1,17 +1,15 @@
 apply plugin: 'com.android.library'
 
-group GROUP
-version VERSION_NAME
 
 android {
     compileSdkVersion 21
-    buildToolsVersion '20.0.0'
+    buildToolsVersion = "24.0.0 rc4"
 
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 1
-        versionName version
+        versionName "1.0"
     }
     buildTypes {
         release {

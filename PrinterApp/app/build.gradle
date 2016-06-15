@@ -2,14 +2,14 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "20.0.0"
+    buildToolsVersion = "24.0.0 rc4"
 
     defaultConfig {
         applicationId "android.app.printerapp"
         minSdkVersion 14
         targetSdkVersion 20
-        versionName 1.0 + ";" + computeVersionName()
-        versionCode System.getenv("BUILD_NUMBER") as Integer ?: 0
+        versionCode 1
+        versionName "1.0"
 
     }
 
@@ -70,7 +70,7 @@ dependencies {
     compile 'com.github.navasmdc:MaterialDesign:1.+@aar'
     compile 'com.github.fengdai:alertdialogpro-theme-material:0.2.1'
     compile project(':materialdesignlibrary')
-    compile 'com.afollestad:material-dialogs:0.6.1.6' //Material design dialogs
+    compile 'com.robbypond:material-dialogs:1.0.0' //Material design dialogs
     compile 'com.pnikosis:materialish-progress:1.4'
     compile 'com.rengwuxian.materialedittext:library:1.8.2'
     compile 'org.apache.httpcomponents:httpclient-android:4.3.5'
